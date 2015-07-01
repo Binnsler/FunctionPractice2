@@ -178,10 +178,35 @@
 
 ///// Problem 9 Refactored /////
 
+// var or = function(array){
+// 	var count = 0;
+// 	if(array.length === 0){
+// 		return false;
+// 	}
+// 	else{
+// 		array.forEach(function(element){
+// 			if(element === true){
+// 				count ++;
+// 			}
+// 			else{
+// 				count += 0;
+// 			}
+// 		})
+// 	if (count === 0){
+// 		return false;
+// 	}
+// 	else{
+// 		return true;
+// 	}
+// 		}
+// 	}
 
 
+// console.log(or([false, false, true, false]))
+// console.log(or([false, false, false]))
+// console.log(or([]))
 
-///// Problem 10/////
+///// Problem 10 /////
 
 // var unique = function(array){
 // 	var newArray = [];
@@ -197,25 +222,22 @@
 // console.log(unique(['todd', 'avery', 'maria', 'avery']))
 
 
+/// Problem 10  Refactored /////
 
-//////////////////////////////
-
-
-// function findSolution(target) {
-//  function find(start, history) {
-//    if (start == target)
-//      return history;
-//    else if (start > target)
-//      return null;
-//    else
-//      return find(start + 5, "(" + history + " + 5)") ||
-//             find(start * 3, "(" + history + " * 3)");
-//  }
-//  return find(1, "1");
+// var unique = function(array){
+// 	var newArray = [];
+// 	array.forEach(function(element){
+// 		if (newArray.indexOf(element) === -1){
+// 			newArray.push(element)
+// 		}
+// 	});
+// 	return newArray;
 // }
 
-// console.log(findSolution(24));
-// // → (((1 * 3) + 5) * 3)
+// console.log(unique(['a', 'b', 'a', 'c', 'd', 'd']))
+// console.log(unique(['todd', 'avery', 'maria', 'avery']))
+
+
 
 
 
